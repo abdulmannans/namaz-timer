@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans;
+  }
+  
+  html {
+    font-family: system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .prayer-card {
+    @apply bg-white rounded-lg shadow-md p-4 border border-gray-200 hover:shadow-lg transition-shadow;
+  }
+  
+  .prayer-time {
+    @apply text-2xl font-bold text-islamic-green;
+  }
+  
+  .prayer-name {
+    @apply text-lg font-semibold text-gray-700 mb-2;
+  }
+  
+  .current-time {
+    @apply text-3xl font-bold text-islamic-gold;
+  }
+}
